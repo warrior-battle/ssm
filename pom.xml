@@ -15,7 +15,7 @@
 		<!-- 统一各个框架版本 -->
 		<spring.version>4.3.20.RELEASE</spring.version>
 		<mybatis.version>3.4.1</mybatis.version>
-		<jackson.version>2.9.5</jackson.version>
+		<jackson.version>2.9.8</jackson.version>
 	</properties>
 
 	<dependencies>
