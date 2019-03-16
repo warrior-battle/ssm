@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace要指明dao文件，spring才能创建实现类对象 -->
+<mapper namespace="org.myproject.dao.GetUserDao">
+	<resultMap type="org.myproject.entity.User" id="User">
+		<id column="id" jdbcType="INTEGER" property="userId" />
+		<result column="user_name" jdbcType="VARCHAR" property="userName" />
+		<result column="password" jdbcType="VARCHAR" property="userPassword" />
+		<result  column="age" jdbcType="INTEGER" property="age"/>
+	</resultMap>
+	
+	
+	<select id="getUser" parameterType="int" resultMap="User">
+		SELECT user_t.id,user_t.user_name,user_t.password,user_t.age
+		 FROM user_t  WHERE user_t.id=#{_parameter}
+	</select>
+
+	
+
+</mapper>
