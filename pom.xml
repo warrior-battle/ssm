@@ -188,7 +188,7 @@
 				<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-maven-plugin -->
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
-				<version>9.4.12.v20180830</version>
+				<version>9.3.11.v20160721</version>
 				<executions>
 					<execution>
 						<phase>package</phase>
